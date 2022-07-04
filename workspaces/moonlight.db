@@ -1,0 +1,16 @@
+DROP DATABASE moonlight IF EXISTS;
+CREATE DATABASE IF NOT EXISTS moonlight;
+USE moonlight;
+
+drop table if EXISTS users;
+CREATE TABLE IF NOT EXISTS users(
+    username VARCHAR(80),
+    attributes VARCHAR(30),
+    passwd VARCHAR(80)
+);
+-- primer nivel
+insert into users(username, attributes, passwd) values('Paciente', 'Lectura', '12345');
+-- segundo nivel
+insert into users(username, attributes, passwd) values('Gerente', 'Escritura', 'youmorningismylife');
+-- tercer nivel
+insert into users(username, attributes, passwd) values('Administrador', 'Lectura y Escritura', '4dministr4d0r_Is_Hacked!');
