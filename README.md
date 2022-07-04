@@ -34,4 +34,4 @@ Ejemplos de ejecución:
 
 #### Screenshot de ejecución:
 ![IMAGEN1](https://i.imgur.com/V2xM2kf.png) 
-**Nota:** Si deseas complejidad, quita el "#" en la linea **39** del archivo *machine.py* , esto hará que borre el archivo de la base de datos automaticamente una vez se ejecute la máquina, asegurandose así que no hay vuelta atras para las pruebas de penetración de la base de datos.
+**Nota:** Si deseas complejidad, quita el "#" en la linea **39** del archivo *machine.py* , esto hará que borre el archivo de la base de datos automáticamente una vez se ejecute la máquina, asegurándose así que no hay vuelta atras para las pruebas de penetración de la base de datos.
