@@ -8,14 +8,35 @@ host = str(config['DEFAULT']['host'])
 port = str(config['DEFAULT']['port'])
 dbfile = str(config['DEFAULT']['DBFILE'])
 
+
+def logo():
+    print("""
+          ______          \ /
+      .-'` .    `'-.    -= * =-
+    .'  '    .---.  '.    / \ 
+   /  '    .'     `'. \ 
+  ;  '    /          \|
+ :  '  _ ;            `
+;  :  /(\ \ 
+|  .       '.
+|  ' /     --'
+|  .   '.__\              MoonLight Lab
+;  :       /
+ ;  .     |            , By Mrx04programmer
+  ;  .    \           /|
+   \  .    '.       .'/
+    '.  '  . `'---'`.'
+      `'-..._____.-`
+""")
 # Main
 def main():
     # Sentences
     ## Server
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind(("127.0.0.1", int(port)))
+        logo()
         print("Corriendo maquina en el puerto "+str(port))
-        sh("rm "+dbfile)
+        #sh("rm "+dbfile)
         s.listen()
         c, a = s.accept() # Accept All Requests
         with c:
