@@ -1,6 +1,6 @@
 
 # MoonLight-Lab
-<h6>Find My Login Page</h6>
+
 Laboratorio Local de Pentesting basado en la vulnerabilidad del Reto llamado Impossible de la plataforma HackTheBox, adaptandose a una maquina y su carnada (BD)
 
 
@@ -34,6 +34,11 @@ Ejemplos de ejecución:
 *En Windows:*
 >py.exe machine.py
 
+*Objetivo:*
+<h6>Encuentra mi página de inicio de sesión y encuentra la clave</h6>
+
 #### Screenshot de ejecución:
 ![IMAGEN1](https://i.imgur.com/V2xM2kf.png) 
 **Nota:** Si deseas complejidad, quita el "#" en la linea **39** del archivo *machine.py* , esto hará que borre el archivo de la base de datos automáticamente una vez se ejecute la máquina, asegurándose así que no hay vuelta atras para las pruebas de penetración de la base de datos.
+
+<inpug>
